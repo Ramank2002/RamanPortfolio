@@ -65,8 +65,7 @@ const aboutData = [
           ": Participated and excelled in the prestigious CodeThon, a high-stakes coding competition hosted by the esteemed National Institute of Technology (NIT), Bhopal",
       },
       {
-        title:
-          "IDE BOOTCAMP - 2023, IIT BBSR",
+        title: "IDE BOOTCAMP - 2023, IIT BBSR",
         stage:
           ": Led a team of 20 students as Team Leader, representing our college at the IDE Bootcamp - 2023 in IIT Bhubaneswar, where we showcased our innovative projects and presented in front of the Education Minister.",
       },
@@ -192,8 +191,13 @@ const About = () => {
                   <div className="flex gap-x-4 justify-center align-center">
                     {/* <div className="flex gap-x-4 "> */}
                     {/* {icons} */}
-                    {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl text-white ">{icon}</div>;
+                    {item.icons?.map((icon, iconIndex) => {
+                      return (
+                        <div key={iconIndex}>
+                          {" "}
+                          <div className="text-2xl text-white ">{icon}</div>
+                        </div>
+                      );
                     })}
                   </div>
                 </div>
