@@ -6,7 +6,6 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
   FaFigma,
 } from "react-icons/fa";
 
@@ -32,14 +31,12 @@ const aboutData = [
           <FaReact />,
           <SiNextdotjs />,
           <SiFramer />,
-          <FaFigma />,
-
-          // <FaWordpress />,
-        ],
+          <FaFigma />
+        ]
       },
       {
         title: "Software Development",
-        icons: [<SiCplusplus />, <SiGithub />, <SiMysql />, <SiMongodb />],
+        icons: [<SiCplusplus />, <SiGithub />, <SiMysql />, <SiMongodb />]
       },
     ],
   },
@@ -121,7 +118,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-0 -left-[300px]"
       >
         <Avatar />
       </motion.div>
@@ -133,7 +130,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
+            className="h2 mt-[3rem]"
           >
             Captivating <span className="text-accent">stories</span> birth
             magnificient skills.
