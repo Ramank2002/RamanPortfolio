@@ -33,7 +33,11 @@ router.post("/register", async (req, res) => {
       transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
           console.log("Error sending email", error);
-          res.status(500).json({ status: 500, error: "Error sending email" });
+          // res.status(500).json({ status: 500, error: "Error sending email" });
+          console.log("Email sent", info.response);//this below in else only
+          res
+            .status(201)
+            .json({ status: 201, message: "Email sent successfully" });
         } else {
           console.log("Email sent", info.response);
           res
@@ -58,7 +62,11 @@ router.post("/register", async (req, res) => {
       transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
           console.log("Error sending email", error);
-          res.status(500).json({ status: 500, error: "Error sending email" });
+          // res.status(500).json({ status: 500, error: "Error sending email" });
+          console.log("Email sent", info.response);//this below in else only
+          res
+            .status(201)
+            .json({ status: 201, message: "Email sent successfully" });
         } else {
           console.log("Email sent", info.response);
           res

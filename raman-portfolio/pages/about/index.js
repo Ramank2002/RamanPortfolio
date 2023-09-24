@@ -98,7 +98,7 @@ const aboutData = [
       },
       {
         title: "GITA Autonomous College - B.Tech CSE (Data Science)",
-        stage: "Current CGPA : 9.21",
+        stage: "Current CGPA : 9.21 (Till 5th Semester)",
       },
     ],
   },

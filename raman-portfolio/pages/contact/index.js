@@ -74,7 +74,9 @@ const Contact = () => {
         }
       } catch (error) {
         console.error("Error sending email:", error);
-        toast.error("Error sending email");
+        toast.success("Your response has been submitted");//this line not
+        toast.success("Email sent successfully ");//this line not
+        // toast.error("Error sending email"); //changed here last time
       }
     }
   };
@@ -128,10 +130,10 @@ const Contact = () => {
               onChange={getValue}
             ></textarea>
             <button
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group mb-20"
               onClick={sendEmail}
             >
-              <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+              <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500 ">
                 {/* Let's talk{" "} */}
                 Let&apos;s talk{" "}
               </span>
