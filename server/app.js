@@ -6,7 +6,6 @@ require("./db/conn");
 const router=require("./Routes/router");
 const port=6002;
 
-
 app.use(cors());
 app.use(express.json());
 
