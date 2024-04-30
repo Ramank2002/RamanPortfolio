@@ -44,5 +44,5 @@
 
 [![Raman Kumar Gupta](https://avatars.githubusercontent.com/u/111958328?s=400&u=d3ca8fc8f1ed687883ba4fe3592eb33b9fd234aa&v=4)]
 
-RKG © [Raman Kumar Gupta ](https://raman-portfolio-1.vercel.ap)
+RKG © [Raman Kumar Gupta ](https://raman-portfolio-1.vercel.app/)
 
